@@ -1,0 +1,30 @@
+/* Stripe Design Language — 色彩系统（Light Theme） */
+/* 对应 DESIGN.md 2.1 节 */
+/* 仅限管理员统计分析页面使用 */
+
+.stripe-theme {
+  /* 品牌与强调色 */
+  --stripe-color-primary: #533afd;
+  --stripe-color-primary-deep: #4434d4;
+  --stripe-color-primary-press: #2e2b8c;
+  --stripe-color-primary-soft: #665efd;
+  --stripe-color-primary-bg-subdued-hover: #b9b9f9;
+  --stripe-color-brand-dark-900: #1c1e54;
+
+  /* 表面色（浅色系） */
+  --stripe-color-canvas: #ffffff;
+  --stripe-color-canvas-soft: #f6f9fc;
+  --stripe-color-canvas-cream: #f5e9d4;
+  --stripe-color-hairline: #e3e8ee;
+
+  /* 文字色 */
+  --stripe-color-ink: #0d253d;
+  --stripe-color-ink-secondary: #273951;
+  --stripe-color-ink-mute: #64748d;
+
+  /* 图表专用色 */
+  --stripe-color-ruby: #ea2261;
+  --stripe-color-magenta: #f96bee;
+  --stripe-color-lemon: #9b6829;
+  --stripe-color-shadow-blue: #003770;
+}

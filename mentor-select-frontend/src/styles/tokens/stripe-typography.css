@@ -1,0 +1,51 @@
+/* Stripe Design Language — 字体排版 */
+/* 对应 DESIGN.md 2.2 节 */
+
+.stripe-theme {
+  --stripe-font-display: 'Inter', 'SF Pro Display', system-ui, -apple-system, sans-serif;
+
+  --stripe-text-display-xxl: 56px;
+  --stripe-text-display-xxl-weight: 300;
+  --stripe-text-display-xxl-line: 1.03;
+  --stripe-text-display-xxl-spacing: -1.4px;
+
+  --stripe-text-display-xl: 48px;
+  --stripe-text-display-xl-weight: 300;
+  --stripe-text-display-xl-line: 1.15;
+  --stripe-text-display-xl-spacing: -0.96px;
+
+  --stripe-text-display-lg: 32px;
+  --stripe-text-display-lg-weight: 300;
+  --stripe-text-display-lg-line: 1.1;
+  --stripe-text-display-lg-spacing: -0.64px;
+
+  --stripe-text-display-md: 26px;
+  --stripe-text-display-md-weight: 300;
+  --stripe-text-display-md-line: 1.12;
+  --stripe-text-display-md-spacing: -0.26px;
+
+  --stripe-text-heading-lg: 22px;
+  --stripe-text-heading-lg-weight: 300;
+  --stripe-text-heading-lg-line: 1.1;
+  --stripe-text-heading-lg-spacing: -0.22px;
+
+  --stripe-text-body-lg: 16px;
+  --stripe-text-body-lg-weight: 300;
+  --stripe-text-body-lg-line: 1.4;
+  --stripe-text-body-lg-spacing: 0;
+
+  --stripe-text-body-md: 15px;
+  --stripe-text-body-md-weight: 300;
+  --stripe-text-body-md-line: 1.4;
+  --stripe-text-body-md-spacing: 0;
+
+  --stripe-text-body-tabular: 14px;
+  --stripe-text-body-tabular-weight: 300;
+  --stripe-text-body-tabular-line: 1.4;
+  --stripe-text-body-tabular-spacing: -0.42px;
+
+  --stripe-text-caption: 13px;
+  --stripe-text-caption-weight: 400;
+  --stripe-text-caption-line: 1.4;
+  --stripe-text-caption-spacing: -0.39px;
+}

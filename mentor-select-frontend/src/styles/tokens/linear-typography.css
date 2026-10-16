@@ -1,0 +1,75 @@
+/* Linear Design Language — 字体排版 */
+/* 对应 DESIGN.md 1.2 节 */
+
+:root {
+  /* 字体族 */
+  --font-display: 'Inter', 'SF Pro Display', -apple-system, system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-text: 'Inter', -apple-system, system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* 字号层级 */
+  --text-display-xl: 80px;
+  --text-display-xl-weight: 600;
+  --text-display-xl-line: 1.05;
+  --text-display-xl-spacing: -3.0px;
+
+  --text-display-lg: 56px;
+  --text-display-lg-weight: 600;
+  --text-display-lg-line: 1.10;
+  --text-display-lg-spacing: -1.8px;
+
+  --text-display-md: 40px;
+  --text-display-md-weight: 600;
+  --text-display-md-line: 1.15;
+  --text-display-md-spacing: -1.0px;
+
+  --text-headline: 28px;
+  --text-headline-weight: 600;
+  --text-headline-line: 1.20;
+  --text-headline-spacing: -0.6px;
+
+  --text-card-title: 22px;
+  --text-card-title-weight: 500;
+  --text-card-title-line: 1.25;
+  --text-card-title-spacing: -0.4px;
+
+  --text-subhead: 20px;
+  --text-subhead-weight: 400;
+  --text-subhead-line: 1.40;
+  --text-subhead-spacing: -0.2px;
+
+  --text-body-lg: 18px;
+  --text-body-lg-weight: 400;
+  --text-body-lg-line: 1.50;
+  --text-body-lg-spacing: -0.1px;
+
+  --text-body: 16px;
+  --text-body-weight: 400;
+  --text-body-line: 1.50;
+  --text-body-spacing: -0.05px;
+
+  --text-body-sm: 14px;
+  --text-body-sm-weight: 400;
+  --text-body-sm-line: 1.50;
+  --text-body-sm-spacing: 0;
+
+  --text-caption: 12px;
+  --text-caption-weight: 400;
+  --text-caption-line: 1.40;
+  --text-caption-spacing: 0;
+
+  --text-button: 14px;
+  --text-button-weight: 500;
+  --text-button-line: 1.20;
+  --text-button-spacing: 0;
+
+  --text-eyebrow: 13px;
+  --text-eyebrow-weight: 500;
+  --text-eyebrow-line: 1.30;
+  --text-eyebrow-spacing: 0.4px;
+
+  --text-mono: 13px;
+  --text-mono-weight: 400;
+  --text-mono-line: 1.50;
+  --text-mono-spacing: 0;
+}

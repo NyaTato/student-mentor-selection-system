@@ -1,0 +1,13 @@
+/* Linear Design Language — 间距系统 */
+/* 对应 DESIGN.md 1.3 节 */
+
+:root {
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  --spacing-section: 96px;
+}

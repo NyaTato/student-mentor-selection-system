@@ -1,0 +1,66 @@
+/* 全局样式入口 — Light Theme */
+
+/* Design Tokens */
+@import './tokens/linear-colors.css';
+@import './tokens/linear-typography.css';
+@import './tokens/linear-spacing.css';
+@import './tokens/linear-rounded.css';
+@import './tokens/stripe-colors.css';
+@import './tokens/stripe-typography.css';
+@import './tokens/stripe-spacing.css';
+@import './tokens/stripe-rounded.css';
+
+/* 基础重置 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--font-text);
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-size: var(--text-body);
+  font-weight: var(--text-body-weight);
+  line-height: var(--text-body-line);
+  letter-spacing: var(--text-body-spacing);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  height: 100%;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+/* 滚动条 — Light */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-canvas);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-hairline-strong);
+  border-radius: var(--rounded-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ink-subtle);
+}

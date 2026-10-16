@@ -1,0 +1,11 @@
+/* Stripe Design Language — 圆角系统 */
+/* 对应 DESIGN.md 2.4 节 */
+
+.stripe-theme {
+  --stripe-rounded-xs: 4px;
+  --stripe-rounded-sm: 6px;
+  --stripe-rounded-md: 8px;
+  --stripe-rounded-lg: 12px;
+  --stripe-rounded-xl: 16px;
+  --stripe-rounded-pill: 9999px;
+}

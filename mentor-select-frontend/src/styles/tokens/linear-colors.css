@@ -1,0 +1,56 @@
+/* Linear Design Language — 色彩系统（Light Theme） */
+/* 对应 DESIGN.md 1.1 节 + 用户指定的 Light Theme Token */
+
+:root {
+  /* 品牌与强调色 */
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-focus: #2563eb;
+  --color-primary-soft: rgba(37, 99, 235, 0.08);
+  --color-primary-soft-hover: rgba(37, 99, 235, 0.12);
+  --color-primary-border: rgba(37, 99, 235, 0.25);
+
+  /* 表面层级 — Light */
+  --color-canvas: #f8fafc;
+  --color-surface-1: #ffffff;
+  --color-surface-2: #f9fafb;
+  --color-surface-3: #f3f4f6;
+  --color-surface-4: #f8fafc;
+  --color-hairline: #e5e7eb;
+  --color-hairline-strong: #d1d5db;
+  --color-hairline-tertiary: #e5e7eb;
+
+  /* 专用表面 */
+  --color-card: #ffffff;
+  --color-sidebar: #ffffff;
+  --color-topbar: rgba(255, 255, 255, 0.8);
+
+  /* 文字色 — Light */
+  --color-ink: #111827;
+  --color-ink-muted: #6b7280;
+  --color-ink-subtle: #9ca3af;
+  --color-ink-tertiary: #9ca3af;
+
+  /* 语义色 — Light */
+  --color-semantic-success: #22c55e;
+  --color-semantic-warning: #f59e0b;
+  --color-semantic-error: #ef4444;
+  --color-semantic-overlay: rgba(0, 0, 0, 0.35);
+
+  /* 语义色背景变体 */
+  --color-success-bg: rgba(34, 197, 94, 0.12);
+  --color-success-border: rgba(34, 197, 94, 0.25);
+  --color-warning-bg: rgba(245, 158, 11, 0.12);
+  --color-warning-border: rgba(245, 158, 11, 0.25);
+  --color-error-bg: rgba(239, 68, 68, 0.12);
+  --color-error-border: rgba(239, 68, 68, 0.25);
+
+  /* 阴影 */
+  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.06);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.08);
+
+  /* 反色系统 */
+  --color-inverse-canvas: #0f1011;
+  --color-inverse-ink: #f7f8f8;
+}

@@ -1,0 +1,13 @@
+/* Stripe Design Language — 间距系统 */
+/* 对应 DESIGN.md 2.3 节 */
+
+.stripe-theme {
+  --stripe-spacing-xxs: 2px;
+  --stripe-spacing-xs: 4px;
+  --stripe-spacing-sm: 8px;
+  --stripe-spacing-md: 12px;
+  --stripe-spacing-lg: 16px;
+  --stripe-spacing-xl: 24px;
+  --stripe-spacing-xxl: 32px;
+  --stripe-spacing-huge: 64px;
+}
