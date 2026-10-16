@@ -62,4 +62,4 @@ python manage.py runserver 127.0.0.1:8000 --settings=config.settings.demo
 
 旧实现曾写 legacy `student/teacher/admin/user` 表并手工同步档案；现 canonical 单写后
 不再读写 legacy 表，**不提供旧生产库自动迁移**。历史数据需按 `user_id` 离线对账后导入新库；
-`seed_demo` 与测试夹具均只写 canonical 模型。`model/entity`、`model/sql` 保留为纯归档。
+`seed_demo` 与测试夹具均只写 canonical 模型。`model/entity` 在公开仓库中仅供历史结构参考；旧 `model/sql` 留在原始本地仓库，未公开。

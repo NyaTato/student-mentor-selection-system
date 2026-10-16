@@ -11,7 +11,7 @@ MySQL REPEATABLE READ 下普通 `SELECT COUNT` 会复用事务快照，即使持
 
 不是。档案 CRUD 是 v2 重建（canonical ORM）；业务模块是路由复用——`api/urls.py` 与
 `config/api_urls.py` include 同一套 `apps.*.urls`，v1/v2 同 View 同数据。`imports/logs/auth`
-仍只 v1。旧 `model/entity + model/sql` 是纯归档。
+仍只 v1。公开仓库中的旧 `model/entity` 是归档；原项目 `model/sql` 未纳入公开副本。
 
 ## JWT 刷新是真轮换吗？
 

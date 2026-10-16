@@ -43,7 +43,7 @@ stateDiagram-v2
 
 - 权威数据源：canonical `apps` 模型。档案：`User` + `StudentProfile`/`TeacherProfile`/`AdminProfile`（主键均为 `user_id`，`id == user_id`）；业务：`Application` / `Admission` / `TeacherQuota` / `SystemState` / `AcademicYear` / `Announcement` 等。`lib/service + lib/db_manager` 是 v2 档案路由的 canonical ORM 适配器（单写），不是第二套业务。
 - 边界：View 只做请求/响应转换；Service 持有事务与业务规则；Repository 只做查询与加锁读（含 `get_by_id_for_update`、当前读计数）；Model 定义表/约束/索引。`api/views/student.py` 的授权关系查询已下沉到 Service，不再直查业务表。
-- v1/v2 关系：档案 CRUD 是 v2 重建功能（`api/views/*`）；业务模块是路由复用——`api/urls.py（/api/v2/…）` 与 `config/api_urls.py（/api/v1/…）` include 同一套 `apps.*.urls`/View，v1/v2 读同一份业务状态。`imports`/`logs` 仍只 v1；`auth` 按契约保留 v1。旧 `model/entity（managed=False）`、`model/sql/*.sql`、`lib/db_manager/base_db.py` 为纯归档，无业务引用，不删除。
+- v1/v2 关系：档案 CRUD 是 v2 重建功能（`api/views/*`）；业务模块是路由复用——`api/urls.py（/api/v2/…）` 与 `config/api_urls.py（/api/v1/…）` include 同一套 `apps.*.urls`/View，v1/v2 读同一份业务状态。`imports`/`logs` 仍只 v1；`auth` 按契约保留 v1。旧 `model/entity（managed=False）`、`lib/db_manager/base_db.py` 为无业务引用的归档；原项目的 `model/sql/*.sql` 未纳入公开副本。
 - 旧双表库：不提供旧生产库自动迁移；历史 legacy 自增 `id` 与新 `user_id` 语义不可混用，需按 `user_id` 离线对账（见 `docs/development.md`）。
 
 ## 5. 并发与 Redis 的真实定位

@@ -66,7 +66,7 @@ stateDiagram-v2
 | A 已完成 v2（重建功能） | `api/urls.py` 档案 CRUD：`users/*`、`students/*`、`teachers/*`、`admins/*`（canonical ORM 重写，形状保持，权限收紧） | v2 正式入口 |
 | B 仍只 v1 | `imports/*`（上传/模板/任务/日志）、`logs/*`（操作/登录日志）；`auth/*` 按后端契约保留 v1 | 前端经 v1 调用 |
 | C 路由复用（非重建） | `applications/`、`assignments/（admissions/auto-logs/manual-assign/auto-assign/*）`、`announcements/`、`system/`、`statistics/`、`academic-years/`、`teachers/(profiles/directory/quotas)`：`api/urls.py（/api/v2/…）` 与 `config/api_urls.py（/api/v1/…）` include 同一套 `apps.*.urls`/View，因此 v1/v2 读到同一份业务状态；`POST applications/{id}/revoke-approval/` 在 v1/v2 同时可用（同一 router 别名） | 路由复用，不叫“重写 v2” |
-| D 旧归档 | `model/entity/*.py（managed=False）`、`model/sql/*.sql`、`lib/db_manager/base_db.py` 等：保留为归档，当前无业务代码引用 | 不删除，只归档 |
+| D 旧归档 | `model/entity/*.py（managed=False）`、`lib/db_manager/base_db.py` 等当前无业务代码引用；原项目的 `model/sql/*.sql` 仅留在私有原仓库，公开副本不包含旧 SQL | 不参与运行 |
 
 详情（逐端点表、权限、分页 `{"list","total","page","page_size","total_pages"}`）见 `docs/API.md`。
 

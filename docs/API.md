@@ -10,7 +10,7 @@
 | A 已完成 v2（重建功能） | `api/urls.py`：`users/*`（login/list/create/{id}/update/change_password/reset_password/disable/enable/delete）、`students/*`（list/create/{id}/by_user/by_number/update/phone/delete）、`teachers/*`、`admins/*` | canonical ORM 重写；响应形状保持；权限收紧（改他人密码 403、用户/管理员列表仅管理员、学生 phone 字段级可见） |
 | B 仍只 v1 | `imports/*`（upload/template/tasks/error-report/logs）、`logs/*`（operation/login）；`auth/*`（login/refresh/logout/me/change-password）按后端契约保留 v1 | 前端经 v1 调用（见 `src/api/data-loader.ts`、`write-api.ts` 头注释） |
 | C 路由复用（v1 兼容 + v2 正式） | `applications/`（CRUD/my/teacher/approve/reject/batch-approve/batch-reject/cancel/**revoke-approval**）、`assignments/`（admissions/auto-logs/**manual-assign**/auto-assign/preview+run+revoke）、`announcements/`、`system/`（states/schedules/histories）、`statistics/`、`academic-years/`、`teachers/`（profiles/directory/quotas） | `api/urls.py` 与 `config/api_urls.py` include 同一套 `apps.*.urls`；v1/v2 同 View 同数据。`manual-assign/` 在 v1 是兼容别名；`revoke-approval/` 路径参数是申请 ID |
-| D 旧归档 | `model/entity/*.py（managed=False）`、`model/sql/*.sql` 等 | 纯归档，无业务引用，不删除 |
+| D 旧归档 | `model/entity/*.py（managed=False）` 等；原项目的 `model/sql/*.sql` 不纳入公开副本 | 无业务引用，不参与运行 |
 
 前端：`requestV2` 走 `/api/v2`（档案 + 已迁移业务），`request` 走 `/api/v1`（imports/logs/auth 等）。名额展示唯一可信源是汇总接口 `teachers/profiles/directory/`（`max_quota/admitted_count/remaining_quota/has_quota`），不得用裁剪后的录取列表自行 count。
 
